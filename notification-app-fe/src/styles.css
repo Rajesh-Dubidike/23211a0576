@@ -1,0 +1,115 @@
+html {
+  background: #f6f8fb;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(28, 93, 153, 0.08), rgba(28, 93, 153, 0) 280px),
+    #f6f8fb;
+}
+
+.topbar {
+  min-height: 76px;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #dce3ee;
+}
+
+.content {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.controls,
+.inbox-panel {
+  border: 1px solid #dce3ee;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.filter-control {
+  min-width: 150px;
+}
+
+.status-alert {
+  margin-bottom: 16px;
+}
+
+.inbox-panel {
+  padding: 20px;
+}
+
+.inbox-panel .MuiDivider-root {
+  margin: 16px 0;
+}
+
+.notification-row {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 12px;
+  min-height: 104px;
+  padding: 14px;
+  border: 1px solid #dce3ee;
+  background: #ffffff;
+}
+
+.notification-row.viewed {
+  background: #f9fafc;
+}
+
+.rank {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #e7f0f8;
+  color: #1c5d99;
+  font-weight: 700;
+}
+
+.notification-copy {
+  min-width: 0;
+}
+
+.message {
+  overflow-wrap: anywhere;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    align-items: flex-start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .notification-row {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+
+  .notification-row .MuiIconButton-root {
+    grid-column: 2;
+    justify-self: end;
+  }
+}

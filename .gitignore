@@ -1,0 +1,6 @@
+node_modules
+dist
+.env
+notification-app-fe/.env
+notification-app-fe/node_modules
+notification-app-fe/dist
